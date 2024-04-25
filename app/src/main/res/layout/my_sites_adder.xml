@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="0dp"
+    tools:context=".MoreSites.MySitesAdder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/toolbar"
+        android:layout_marginLeft="-200dp"
+        android:layout_marginRight="-200dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="-100dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add your custom site from here"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/playflair"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="?attr/normalTextColor"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="?attr/settingsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the Site name"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/playflair"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="?attr/normalTextColor"/>
+
+                <EditText
+                    android:id="@+id/sitenameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="Website Name"
+                    android:textColorHint="?attr/darkTextColor"
+                    android:text=""
+                    android:textColor="?attr/normalTextColor"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="?attr/settingsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the Site URL"
+                android:textSize="13dp"
+                android:fontFamily="@font/playflair"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="?attr/normalTextColor"/>
+
+            <EditText
+                android:id="@+id/siteurlET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:hint="Website URl"
+                android:textColorHint="?attr/darkTextColor"
+                android:textColor="?attr/normalTextColor"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/mysitesaddbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:background="?attr/tabBtnCard"
+                android:textColor="?attr/normalTextColor"
+                android:layout_marginTop="40dp"/>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="30dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="80dp"
+               app:cardBackgroundColor="?attr/cardBackground">
+               <com.balysv.materialripple.MaterialRippleLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:mrl_rippleOverlay="true"
+                   app:mrl_rippleColor="?attr/rippleColor"
+                   app:mrl_rippleAlpha="0.2"
+                   app:mrl_rippleDelayClick="false"
+                   app:mrl_rippleHover="true"
+                   app:mrl_rippleRoundedCorners="20dp"
+                   app:mrl_rippleDuration="100"
+                   android:layout_weight="1"
+                   android:id="@+id/closeBtnMysitesadder">
+                   <ImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:scaleType="centerInside"
+                       android:padding="20dp"
+                       android:src="@drawable/disabled_back"/>
+               </com.balysv.materialripple.MaterialRippleLayout>
+           </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

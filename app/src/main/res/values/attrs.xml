@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBackground" format="color" />
+    <attr name="colorTintedBackground" format="color" />
+
+    <declare-styleable name="AppTheme">
+        <attr name="primaryTextColor" format="color"/>
+        <attr name="secondaryTextColor" format="color"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="backgroundCardColor" format="color"/>
+        <attr name="windowBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="DarkMode">
+        <attr name="normalTextColor" format="color"/>
+        <attr name="darkTextColor" format="color"/>
+        <attr name="windowBackground" format="color"/>
+        <attr name="cardBackground" format="color"/>
+        <attr name="qrScanBackground" format="color"/>
+        <attr name="statusBarColor" format="color"/>
+        <attr name="toolbar" format="integer"/>
+        <attr name="shimmernews" format="color"/>
+        <attr name="rippleColor" format="color"/>
+        <attr name="newsTabBackground" format="color"/>
+        <attr name="newsTabIndicator" format="color"/>
+        <attr name="settingsCard" format="integer"/>
+        <attr name="settingsBTSheet" format="color"/>
+        <attr name="newsBtnBg" format="integer"/>
+        <attr name="tabBtn" format="integer"/>
+        <attr name="tabBtnCard" format="integer"/>
+        <attr name="roundWhite" format="integer"/>
+        <attr name="icDate" format="integer"/>
+        <attr name="feedbackToolbar" format="integer"/>
+        <attr name="feedbackCardView" format="integer"/>
+        <attr name="feedbackButtonBg" format="integer"/>
+        <attr name="feedbackButton" format="integer"/>
+        <attr name="newsShadowColor" format="integer"/>
+        <attr name="newsBackgroundColor" format="color"/>
+        <attr name="newsDetailMenu" format="integer"/>
+        <attr name="addTo" format="integer"/>
+        <attr name="speedDialBtnAdd" format="integer"/>
+        <attr name="speedDialBtnMore" format="integer"/>
+        <attr name="cust_dialog_dark_mode_main" format="integer"/>
+        <attr name="cust_dialog_dark_mode_img" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RelativeTimeTextView">
+        <attr name="relativeTimePrefix" format="string" />
+        <attr name="relativeTimeSuffix" format="string" />
+        <attr name="referenceTime" format="string" />
+    </declare-styleable>
+</resources>

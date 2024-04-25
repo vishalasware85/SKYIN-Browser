@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/stores" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/snapdeal" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/flipkart"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/shopclues"
+            android:background="@drawable/my_sites_add"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:background="@drawable/my_sites_add"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/ebay"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:background="@drawable/my_sites_add"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/jabong"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:background="@drawable/my_sites_add"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:layout_height="100dp"
+            android:id="@+id/lenskart"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/homeshop"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/bigbasket"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/paytm_mall"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/nykaa"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/peperfry"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/yebhi"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

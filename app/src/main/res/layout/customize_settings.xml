@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/customizeMainCard"
+                android:background="?attr/settingsCard">
+
+               <RadioGroup
+                   android:layout_marginRight="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@color/transparent"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <me.omidh.liquidradiobutton.LiquidRadioButton
+                       android:id="@+id/systemDefaultCB"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:text="System Default"
+                       android:gravity="end|center_vertical"
+                       android:textSize="18sp"
+                       android:textColor="?attr/normalTextColor"
+                       app:lrb_strokeWidth="3dp"
+                       app:lrb_explodeCount="6"
+                       app:lrb_outterPadding="10dp"
+                       app:lrb_innerCircleRadius="15dp"
+                       app:lrb_strokeRadius="23dp"
+                       app:lrb_inAnimDuration="500"
+                       app:lrb_outAnimDuration="500"
+                       app:lrb_checkedColor="@color/purpleStatusBar"
+                       app:lrb_unCheckedColor="@color/purpleStatusBar" />
+
+                   <me.omidh.liquidradiobutton.LiquidRadioButton
+                       android:id="@+id/lightThemeCB"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:text="Light Theme"
+                       android:gravity="end|center_vertical"
+                       android:textSize="18sp"
+                       android:textColor="?attr/normalTextColor"
+                       app:lrb_strokeWidth="3dp"
+                       app:lrb_explodeCount="6"
+                       app:lrb_outterPadding="10dp"
+                       app:lrb_innerCircleRadius="15dp"
+                       app:lrb_strokeRadius="23dp"
+                       app:lrb_inAnimDuration="500"
+                       app:lrb_outAnimDuration="500"
+                       app:lrb_checkedColor="@color/purpleStatusBar"
+                       app:lrb_unCheckedColor="@color/purpleStatusBar" />
+
+                   <me.omidh.liquidradiobutton.LiquidRadioButton
+                       android:id="@+id/darkThemeCB"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:text="Dark Theme"
+                       android:gravity="end|center_vertical"
+                       android:textSize="18sp"
+                       android:textColor="?attr/normalTextColor"
+                       app:lrb_strokeWidth="3dp"
+                       app:lrb_explodeCount="6"
+                       app:lrb_outterPadding="10dp"
+                       app:lrb_innerCircleRadius="15dp"
+                       app:lrb_strokeRadius="23dp"
+                       app:lrb_inAnimDuration="500"
+                       app:lrb_outAnimDuration="500"
+                       app:lrb_checkedColor="@color/purpleStatusBar"
+                       app:lrb_unCheckedColor="@color/purpleStatusBar" />
+               </RadioGroup>
+
+                <Button
+                    android:id="@+id/okThemeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Okay"
+                    android:textColor="?attr/normalTextColor"
+                    android:background="?attr/tabBtnCard"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="?attr/settingsCard">
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/darkThemeWeb"
+                        android:textSize="18sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="?attr/normalTextColor"/>
+
+                    <com.suke.widget.SwitchButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_vertical"
+                        app:sb_checked_color="@color/purpleStatusBar"
+                        android:id="@+id/darkThemeWebSwitch"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

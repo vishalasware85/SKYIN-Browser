@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyinbrowser.vpn.utils.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:layoutDescription="@xml/scene_menu"
+    android:background="?attr/cardBackground">
+
+    <TextView
+        android:id="@+id/appNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="SKY!N VPN"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-black"
+        android:textColor="?attr/normalTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/descTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/connectionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/connection_status"
+        app:fontFamily="sans-serif-medium"
+        android:textColor="?attr/normalTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/usageTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/usageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/daily_total_usage"
+        app:fontFamily="sans-serif-medium"
+        android:textColor="?attr/normalTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/rateUsTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectionTv" />
+
+    <View
+        android:id="@+id/view"
+        android:background="#c2c1c1"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/connectionTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descTv" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlimited_vpn_access"
+        android:textColor="?attr/normalTextColor"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameTv" />
+</com.skyinbrowser.vpn.utils.DrawerContent>

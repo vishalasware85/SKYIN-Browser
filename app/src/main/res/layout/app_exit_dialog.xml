@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="?attr/cardBackground">
+
+    <LinearLayout
+        android:minWidth="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Want to exit App!"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/play_flair"
+            android:textColor="?attr/normalTextColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Clear Main History"
+                android:gravity="center_vertical"
+                android:textColor="?attr/darkTextColor"
+                android:paddingLeft="20dp"/>
+
+            <com.suke.widget.SwitchButton
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:id="@+id/clearMainHistorySB"
+                app:sb_checked_color="@color/purpleStatusBar"/>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Clear Float History"
+                    android:gravity="center_vertical"
+                    android:textColor="?attr/darkTextColor"
+                    android:paddingLeft="20dp"/>
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/clearFloatHistorySB"
+                    app:sb_checked_color="@color/purpleStatusBar"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Clear Split History"
+                    android:gravity="center_vertical"
+                    android:textColor="?attr/darkTextColor"
+                    android:paddingLeft="20dp"/>
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/clearSplitHistorySB"
+                    app:sb_checked_color="@color/purpleStatusBar"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cancelExitDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/tabBtnCard"
+                    android:text="Cancel"
+                    android:layout_gravity="start"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/normalTextColor" />
+
+                <Button
+                    android:background="?attr/tabBtnCard"
+                    android:id="@+id/okayExitDialog"
+                    android:textColor="?attr/normalTextColor"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:text="Ok"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refreshweather"
+        android:title="Refresh"/>
+
+    <item
+        android:id="@+id/custon_location"
+        android:title="Set Custom Location"/>
+
+    <item
+        android:id="@+id/locateMeMpage"
+        android:title="Locate Me"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/weather_detail"
+        android:title="Detail"/>
+    <item
+        android:id="@+id/clearLocationDataMenu"
+        android:title="Clear Location Data"/>
+
+</menu>

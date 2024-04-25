@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="260dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/cust_dialog_dark_mode_main">
+
+            <TextView
+                android:id="@+id/ctv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Do you want?"
+                android:fontFamily="@font/mr"
+                android:textColor="#6A6E7C"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ctv2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ctv1"
+                android:layout_marginTop="12dp"
+                android:text="to enable the dark mode to the whole web pages"
+                android:gravity="center"
+                android:fontFamily="@font/mm"
+                android:textColor="#6A6E7C"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp">
+                <Button
+                    android:id="@+id/noNightModeDialog"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/red"
+                    android:text="No"
+                    android:fontFamily="@font/mm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/yesNightModeDialog"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/red"
+                    android:text="Yes"
+                    android:fontFamily="@font/mm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/cust_dialog_dark_mode_img">
+            <ImageView
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ad_blocker"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

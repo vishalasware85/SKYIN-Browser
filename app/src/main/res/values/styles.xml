@@ -1,0 +1,383 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#000000</item>
+        <item name="darkTextColor">#797979</item>
+        <item name="windowBackground">#fafafa</item>
+        <item name="cardBackground">#FFFFFF</item>
+        <item name="qrScanBackground">#eeeeee</item>
+        <item name="statusBarColor">#8848E8</item>
+        <item name="toolbar">@drawable/settings_toolbar_background</item>
+        <item name="shimmernews">#D6D6D6</item>
+        <item name="rippleColor">#383838</item>
+        <item name="newsTabBackground">#8848E8</item>
+        <item name="newsTabIndicator">#8848E8</item>
+        <item name="newsBtnBg">@drawable/news_btn_bg_light</item>
+        <item name="tabBtn">@drawable/tab_btn</item>
+        <item name="tabBtnCard">@drawable/tab_btn</item>
+        <item name="roundWhite">@drawable/round_white</item>
+        <item name="icDate">@drawable/ic_date</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbar</item>
+        <item name="feedbackCardView">@color/purewhite</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg</item>
+        <item name="feedbackButton">@drawable/feedback_btn</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="settingsCard">@drawable/settings_background</item>
+        <item name="settingsBTSheet">#8848E8</item>
+        <item name="newsShadowColor">@drawable/shadow</item>
+        <item name="newsBackgroundColor">#E8EAEE</item>
+        <item name="newsDetailMenu">@drawable/menu_dark</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn</item>
+        <item name="speedDialBtnMore">@drawable/more_btn</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#B6B6B6</item>
+        <item name="darkTextColor">#7E7E7E</item>
+        <item name="windowBackground">#000000</item>
+        <item name="cardBackground">#2E2E2E</item>
+        <item name="qrScanBackground">#2E2E2E</item>
+        <item name="statusBarColor">#FF101010</item>
+        <item name="toolbar">@drawable/settingstoolbar_dark</item>
+        <item name="shimmernews">#575757</item>
+        <item name="rippleColor">#BBBBBB</item>
+        <item name="newsTabBackground">#2E2E2E</item>
+        <item name="newsTabIndicator">#8848E8</item>
+        <item name="newsBtnBg">@drawable/news_btn_bg_dark</item>
+        <item name="tabBtn">@drawable/tab_btn_dark</item>
+        <item name="tabBtnCard">@drawable/tab_btn_card_dark</item>
+        <item name="roundWhite">@drawable/round_white_dark</item>
+        <item name="icDate">@drawable/ic_date_white</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbardark</item>
+        <item name="feedbackCardView">@color/feedbackCardView</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg_dark</item>
+        <item name="feedbackButton">@drawable/feedback_btn_dark</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="settingsCard">@drawable/setting_background_dark</item>
+        <item name="settingsBTSheet">#2E2E2E</item>
+        <item name="newsShadowColor">@drawable/trns_drawable</item>
+        <item name="newsBackgroundColor">#000000</item>
+        <item name="newsDetailMenu">@drawable/menu_light</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn_dark</item>
+        <item name="speedDialBtnMore">@drawable/more_btn_dark</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog_dark</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle_dark</item>
+    </style>
+
+    <style name="SplashThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#000000</item>
+        <item name="darkTextColor">#797979</item>
+        <item name="windowBackground">#fafafa</item>
+        <item name="cardBackground">#FFFFFF</item>
+        <item name="qrScanBackground">#eeeeee</item>
+        <item name="statusBarColor">#6600FF</item>
+        <item name="toolbar">@drawable/settings_toolbar_background</item>
+        <item name="shimmernews">#D6D6D6</item>
+        <item name="rippleColor">#383838</item>
+        <item name="newsTabBackground">#8848E8</item>
+        <item name="newsTabIndicator">#8848E8</item>
+        <item name="newsBtnBg">@drawable/news_btn_bg_light</item>
+        <item name="tabBtn">@drawable/tab_btn</item>
+        <item name="tabBtnCard">@drawable/tab_btn</item>
+        <item name="roundWhite">@drawable/round_white</item>
+        <item name="icDate">@drawable/ic_date</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbar</item>
+        <item name="feedbackCardView">@color/purewhite</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg</item>
+        <item name="feedbackButton">@drawable/feedback_btn</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="settingsCard">@drawable/settings_background</item>
+        <item name="settingsBTSheet">#8848E8</item>
+        <item name="newsDetailMenu">@drawable/menu_dark</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn</item>
+        <item name="speedDialBtnMore">@drawable/more_btn</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle</item>
+    </style>
+
+    <style name="SplashThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#B6B6B6</item>
+        <item name="darkTextColor">#7E7E7E</item>
+        <item name="windowBackground">#000000</item>
+        <item name="cardBackground">#2E2E2E</item>
+        <item name="qrScanBackground">#2E2E2E</item>
+        <item name="statusBarColor">#FF0000</item>
+        <item name="toolbar">@drawable/settingstoolbar_dark</item>
+        <item name="shimmernews">#575757</item>
+        <item name="rippleColor">#BBBBBB</item>
+        <item name="newsTabBackground">#2E2E2E</item>
+        <item name="newsTabIndicator">#8848E8</item>
+        <item name="newsBtnBg">@drawable/news_btn_bg_dark</item>
+        <item name="tabBtn">@drawable/tab_btn_dark</item>
+        <item name="tabBtnCard">@drawable/tab_btn_card_dark</item>
+        <item name="roundWhite">@drawable/round_white_dark</item>
+        <item name="icDate">@drawable/ic_date_white</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbardark</item>
+        <item name="feedbackCardView">@color/feedbackCardView</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg_dark</item>
+        <item name="feedbackButton">@drawable/feedback_btn_dark</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="settingsCard">@drawable/setting_background_dark</item>
+        <item name="settingsBTSheet">#2E2E2E</item>
+        <item name="newsDetailMenu">@drawable/menu_light</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn_dark</item>
+        <item name="speedDialBtnMore">@drawable/more_btn_dark</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog_dark</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle_dark</item>
+    </style>
+
+    <style name="TranslucentDarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#B6B6B6</item>
+        <item name="darkTextColor">#7E7E7E</item>
+        <item name="windowBackground">#000000</item>
+        <item name="cardBackground">#2E2E2E</item>
+        <item name="statusBarColor">#FF101010</item>
+        <item name="toolbar">@drawable/settingstoolbar_dark</item>
+        <item name="shimmernews">#575757</item>
+        <item name="rippleColor">#BBBBBB</item>
+        <item name="settingsCard">@drawable/setting_background_dark</item>
+        <item name="settingsBTSheet">#2E2E2E</item>
+        <item name="tabBtn">@drawable/tab_btn_dark</item>
+        <item name="tabBtnCard">@drawable/tab_btn_card_dark</item>
+        <item name="roundWhite">@drawable/round_white_dark</item>
+        <item name="icDate">@drawable/ic_date_white</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbardark</item>
+        <item name="feedbackCardView">@color/feedbackCardView</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg_dark</item>
+        <item name="feedbackButton">@drawable/feedback_btn_dark</item>
+        <item name="newsShadowColor">@drawable/trns_drawable</item>
+        <item name="newsBackgroundColor">#000000</item>
+        <item name="newsDetailMenu">@drawable/menu_light</item>
+        <item name="addTo">@drawable/add_to_white</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn_dark</item>
+        <item name="speedDialBtnMore">@drawable/more_btn_dark</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog_dark</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle_dark</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="TranslucentAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#0F0F0F</item>
+        <item name="darkTextColor">#797979</item>
+        <item name="windowBackground">#fafafa</item>
+        <item name="cardBackground">#FFFFFF</item>
+        <item name="statusBarColor">#8848E8</item>
+        <item name="toolbar">@drawable/settings_toolbar_background</item>
+        <item name="shimmernews">#D6D6D6</item>
+        <item name="rippleColor">#383838</item>
+        <item name="settingsCard">@drawable/settings_background</item>
+        <item name="settingsBTSheet">#8848E8</item>
+        <item name="tabBtn">@drawable/tab_btn</item>
+        <item name="tabBtnCard">@drawable/tab_btn</item>
+        <item name="roundWhite">@drawable/round_white</item>
+        <item name="icDate">@drawable/ic_date</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbar</item>
+        <item name="feedbackCardView">@color/purewhite</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg</item>
+        <item name="feedbackButton">@drawable/feedback_btn</item>
+        <item name="newsShadowColor">@drawable/shadow</item>
+        <item name="newsBackgroundColor">#E8EAEE</item>
+        <item name="newsDetailMenu">@drawable/menu_dark</item>
+        <item name="addTo">@drawable/add_to</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn</item>
+        <item name="speedDialBtnMore">@drawable/more_btn</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="TranslucentNewsDarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#B6B6B6</item>
+        <item name="darkTextColor">#7E7E7E</item>
+        <item name="windowBackground">#000000</item>
+        <item name="cardBackground">#2E2E2E</item>
+        <item name="statusBarColor">#FF101010</item>
+        <item name="toolbar">@drawable/settingstoolbar_dark</item>
+        <item name="shimmernews">#575757</item>
+        <item name="rippleColor">#BBBBBB</item>
+        <item name="settingsCard">@drawable/setting_background_dark</item>
+        <item name="settingsBTSheet">#2E2E2E</item>
+        <item name="tabBtn">@drawable/tab_btn_dark</item>
+        <item name="tabBtnCard">@drawable/tab_btn_card_dark</item>
+        <item name="roundWhite">@drawable/round_white_dark</item>
+        <item name="icDate">@drawable/ic_date_white</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbardark</item>
+        <item name="feedbackCardView">@color/feedbackCardView</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg_dark</item>
+        <item name="feedbackButton">@drawable/feedback_btn_dark</item>
+        <item name="newsShadowColor">@drawable/trns_drawable</item>
+        <item name="newsBackgroundColor">#000000</item>
+        <item name="newsDetailMenu">@drawable/menu_light</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn_dark</item>
+        <item name="speedDialBtnMore">@drawable/more_btn_dark</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog_dark</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle_dark</item>
+
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="TranslucentNewsAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="normalTextColor">#0F0F0F</item>
+        <item name="darkTextColor">#797979</item>
+        <item name="windowBackground">#fafafa</item>
+        <item name="cardBackground">#FFFFFF</item>
+        <item name="statusBarColor">#8848E8</item>
+        <item name="toolbar">@drawable/settings_toolbar_background</item>
+        <item name="shimmernews">#D6D6D6</item>
+        <item name="rippleColor">#383838</item>
+        <item name="settingsCard">@drawable/settings_background</item>
+        <item name="settingsBTSheet">#8848E8</item>
+        <item name="tabBtn">@drawable/tab_btn</item>
+        <item name="tabBtnCard">@drawable/tab_btn</item>
+        <item name="roundWhite">@drawable/round_white</item>
+        <item name="icDate">@drawable/ic_date</item>
+        <item name="feedbackToolbar">@drawable/feedbacktoolbar</item>
+        <item name="feedbackCardView">@color/purewhite</item>
+        <item name="feedbackButtonBg">@drawable/feedback_button_bg</item>
+        <item name="feedbackButton">@drawable/feedback_btn</item>
+        <item name="newsShadowColor">@drawable/shadow</item>
+        <item name="newsBackgroundColor">#E8EAEE</item>
+        <item name="newsDetailMenu">@drawable/menu_dark</item>
+        <item name="speedDialBtnAdd">@drawable/add_btn</item>
+        <item name="speedDialBtnMore">@drawable/more_btn</item>
+        <item name="cust_dialog_dark_mode_main">@drawable/bg_dialog</item>
+        <item name="cust_dialog_dark_mode_img">@drawable/circle</item>
+
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="NewsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="Simple_Translucet" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent11" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@android:color/transparent</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus"
+            tools:targetApi="kitkat">false</item>
+        <item name="android:statusBarColor"
+            tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent.BottomSheet" parent="Theme.AppCompat.NoActionBar">
+         <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

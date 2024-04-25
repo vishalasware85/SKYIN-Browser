@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="?attr/settingsCard"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/generalSettCard1"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Location"
+                android:id="@+id/generaltxt1"
+                android:textSize="23sp"
+                android:textColor="?attr/normalTextColor"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/transparent"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/setting_city_name"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="?attr/darkTextColor"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/openLocationSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:textColor="?attr/normalTextColor"
+                    android:background="?attr/tabBtnCard"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+                <LinearLayout
+                    android:background="?attr/settingsCard"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Download files over"
+                            android:textSize="23sp"
+                            android:textColor="?attr/normalTextColor"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="@color/transparent"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/transparent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <me.omidh.liquidradiobutton.LiquidRadioButton
+                                    android:id="@+id/downloadwifionly"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:text="WiFi only"
+                                    android:gravity="end|center_vertical"
+                                    android:textSize="18sp"
+                                    android:textColor="?attr/normalTextColor"
+                                    app:lrb_strokeWidth="3dp"
+                                    app:lrb_explodeCount="6"
+                                    app:lrb_outterPadding="10dp"
+                                    app:lrb_innerCircleRadius="15dp"
+                                    app:lrb_strokeRadius="23dp"
+                                    app:lrb_inAnimDuration="500"
+                                    app:lrb_outAnimDuration="500"
+                                    app:lrb_checkedColor="@color/purpleStatusBar"
+                                    app:lrb_unCheckedColor="@color/purpleStatusBar" />
+
+                                <me.omidh.liquidradiobutton.LiquidRadioButton
+                                    android:id="@+id/downloadanynetwork"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:text="Any network"
+                                    android:gravity="end|center_vertical"
+                                    android:textSize="18sp"
+                                    android:textColor="?attr/normalTextColor"
+                                    app:lrb_strokeWidth="3dp"
+                                    app:lrb_explodeCount="6"
+                                    app:lrb_outterPadding="10dp"
+                                    app:lrb_innerCircleRadius="15dp"
+                                    app:lrb_strokeRadius="23dp"
+                                    app:lrb_inAnimDuration="500"
+                                    app:lrb_outAnimDuration="500"
+                                    app:lrb_checkedColor="@color/purpleStatusBar"
+                                    app:lrb_unCheckedColor="@color/purpleStatusBar" />
+                            </RadioGroup>
+
+                            <Button
+                                android:id="@+id/downloadNetworkOkayBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Okay"
+                                android:textColor="?attr/normalTextColor"
+                                android:background="?attr/tabBtnCard"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="5dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

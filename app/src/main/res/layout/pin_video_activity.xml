@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/purewhite"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/settingimg_thumnail"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/settingsprogressthumb1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="40dp"
+                style="?android:attr/progressBarStyleSmall"/>
+
+            <ImageView
+                android:id="@+id/settingplus_img_thumnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:visibility="visible"
+                android:src="@drawable/plus_float"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/settingvideolayout_1"
+                android:orientation="vertical"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/settingthumnail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/settingsprogressthumb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="40dp"
+                    style="?android:attr/progressBarStyleSmall"/>
+
+                <ImageView
+                    android:id="@+id/settingplus_thumnail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/plus_float"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/settingvideolayout_2"
+                android:orientation="vertical"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/settingthumnail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/settingsprogressthumb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="40dp"
+                    style="?android:attr/progressBarStyleSmall"/>
+
+                <ImageView
+                    android:id="@+id/settingplus_thumnail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/plus_float"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/settingvideolayout_3"
+                android:orientation="vertical"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/settingthumnail3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/settingsprogressthumb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="40dp"
+                    style="?android:attr/progressBarStyleSmall"/>
+
+                <ImageView
+                    android:id="@+id/settingplus_thumnail3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/plus_float"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/settingvideolayout_4"
+                android:orientation="vertical"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/settingthumnail4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/settingsprogressthumb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="40dp"
+                    style="?android:attr/progressBarStyleSmall"/>
+
+                <ImageView
+                    android:id="@+id/settingplus_thumnail4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/plus_float"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

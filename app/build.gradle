@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    namespace 'com.skyinbrowser'
+    compileSdk 34
+    useLibrary 'org.apache.http.legacy'
+
+    buildFeatures{
+        buildConfig = true
+    }
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 34
+        versionCode 8
+        multiDexEnabled true
+        versionName "1.8"
+        renderscriptSupportModeEnabled true
+        renderscriptTargetApi 28
+
+        ndk {
+            abiFilters "arm64-v8a", "armeabi", "armeabi-v7a", "mips", "x86", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/services/javax.annotation.processing.Processor', 'META-INF/DEPENDENCIES', 'META-INF/NOTICE', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0', 'META-INF/services/javax.annotation.processing.Processor']
+        }
+    }
+
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+        disable 'MissingTranslation', 'InvalidPackage'
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'OWM_API_KEY', "\"a1f6053075835c09300685e345632e9c\""
+    }
+
+}
+
+repositories {
+    maven { url 'https://raw.github.com/zeeshanejaz/unirest-android/mvn-repo' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:1.0.1'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.novoda:merlin:1.1.7'
+    //implementation project(':blur_behind')
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'eu.the4thfloor.volley:com.android.volley:2015.02.02'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    implementation 'org.apache.commons:commons-lang3:3.5'
+
+    //for weather
+    implementation 'com.google.android.apps.dashclock:dashclock-api:2.0.0'
+    implementation 'com.roughike:bottom-bar:1.4.0.1'
+    implementation 'com.diogobernardino:williamchart:2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0'
+
+    //for news
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //for download manager
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.4"
+    implementation "androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.4"
+
+    //for floating
+    implementation project(':floating_bubble')
+
+    //FOR SPINNER
+    implementation 'com.github.chivorns:smartmaterialspinner:1.0.4'
+
+    //for advance webview
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    implementation 'androidx.webkit:webkit:1.4.0-beta01'
+
+    //for check box
+    implementation 'com.github.lguipeng:AnimCheckBox:1.0.1'
+
+    //for switcher
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    //for ripple effect
+    //implementation project(':rippleeffect')
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    //for bt-sheet
+    implementation 'com.github.andrefrsousa:SuperBottomSheet:1.3.0'
+
+    //for buttonBounce Animation
+    implementation 'hari.bounceview:bounceview:0.2.0'
+
+    //for qr code scanner
+    implementation 'com.github.blikoon:QRCodeScanner:0.1.2'
+
+    //circle progressbar
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    //FOR WEBPAGE SAVER
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+
+    //for seek bar
+    implementation project(':boxedverticalseekbarlib')
+
+    //for remote config update
+    implementation 'com.google.firebase:firebase-config:20.0.0'
+
+    //for toggle buttons
+    implementation 'me.omidh:liquidradiobutton:1.0.01'
+
+    //for lottie
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+    //for ion library
+    implementation 'com.koushikdutta.ion:ion:2.1.6'
+//
+//    //for vpn
+//    implementation 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.20'
+//    implementation 'androidx.core:core-ktx:1.12.0'
+//    implementation 'com.google.code.gson:gson:2.8.9'
+//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+//    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+//    implementation "android.arch.work:work-runtime-ktx:1.0.1"
+
+    //implementation "androidx.work:work-runtime-ktx:1.1.16"
+}
+
+apply plugin: 'com.google.gms.google-services'

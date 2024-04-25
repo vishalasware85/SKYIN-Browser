@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/tabview"
+            app:cardBackgroundColor="@color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/toolbar"
+                android:layout_marginLeft="-150dp"
+                android:layout_marginRight="-150dp"
+                android:layout_marginTop="-100dp"
+                android:layout_marginBottom="-100dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:onClick="doNoting"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="0dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/closeTabBar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:padding="10dp"
+                        android:src="@drawable/disabled_back"
+                        android:background="@color/transparent"/>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/view_grey"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18sp"
+                            android:textColor="?attr/normalTextColor"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Incognito Mode"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="tabIndex= "
+                            android:id="@+id/tabIndextxt"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="currtab= "
+                            android:id="@+id/currtabtxt"/>
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/incoSwitchSwitchTab"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            app:sb_checked_color="@color/purpleStatusBar"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.skyinbrowser.CustomJavaFiles.TabScrollView
+                android:id="@+id/tabScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                android:layout_marginBottom="200dp"
+                android:layout_marginTop="150dp"
+                android:layout_gravity="center">
+
+                <TabWidget
+                    android:visibility="invisible"
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:dividerPadding="20dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:tabStripEnabled="true"
+                    android:tabStripLeft="@drawable/about"
+                    android:tabStripRight="@drawable/about"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginRight="0dip">
+                </TabWidget>
+            </com.skyinbrowser.CustomJavaFiles.TabScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_gravity="bottom"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:onClick="doNoting"
+                app:cardBackgroundColor="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/closeAllTabs"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="close All tabs"
+                        android:textColor="?attr/normalTextColor"
+                        android:background="?attr/tabBtnCard"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_margin="5dp"
+                            android:background="?attr/tabBtnCard"
+                            android:id="@+id/add_tab"
+                            android:textColor="?attr/normalTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Add"/>
+
+                        <Button
+                            android:layout_margin="5dp"
+                            android:background="?attr/tabBtnCard"
+                            android:layout_weight="1"
+                            android:textColor="?attr/normalTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/remove_tab"
+                            android:text="remove"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </TabHost>
+
+</LinearLayout>

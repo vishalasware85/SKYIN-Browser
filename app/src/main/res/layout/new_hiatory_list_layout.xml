@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout app:mrl_rippleOverlay="true"
+    app:mrl_rippleColor="?attr/rippleColor"
+    app:mrl_rippleAlpha="0.2"
+    app:mrl_rippleDelayClick="false"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleRoundedCorners="5dp"
+    app:mrl_rippleDuration="200"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:textSize="20sp"
+                    android:textColor="?attr/normalTextColor"
+                    android:id="@+id/textHistoryTitle"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:textColor="?attr/darkTextColor"
+                    android:id="@+id/textHistoryurl"
+                    android:ellipsize="end"/>
+
+                <com.skyinbrowser.CustomJavaFiles.RelativeTimeTextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/historyTime"
+                    android:textSize="12sp"
+                    android:textColor="?attr/darkTextColor"
+                    android:layout_gravity="end"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</com.balysv.materialripple.MaterialRippleLayout>

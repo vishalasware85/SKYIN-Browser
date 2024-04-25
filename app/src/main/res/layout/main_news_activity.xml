@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="?attr/newsBackgroundColor"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/newsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="?attr/newsShadowColor"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/engNewsBack"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/shape"/>
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/newsTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginEnd="10dp"
+                tl:tl_indicator_margin_left="2dp"
+                tl:tl_indicator_margin_right="2dp"
+                app:tl_indicator_style="NORMAL"
+                tl:tl_textUnselectColor="?attr/darkTextColor"
+                tl:tl_textSelectColor="#8aa2ff"
+                app:tl_textsize="15sp"
+                android:background="@color/transparent"
+                app:tl_indicator_color="#8aa2ff"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

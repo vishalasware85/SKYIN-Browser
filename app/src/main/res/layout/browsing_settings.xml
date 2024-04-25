@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="?attr/settingsCard"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/generalSettCard2"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Swipe Refresh"
+                                android:id="@+id/generaltxt2"
+                                android:textSize="23sp"
+                                android:textColor="?attr/normalTextColor"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="0dp"
+                            app:cardBackgroundColor="@color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Turn on"
+                                android:id="@+id/swipeturnontxt"
+                                android:textColor="?attr/darkTextColor"
+                                android:paddingLeft="20dp"/>
+
+                            <com.suke.widget.SwitchButton
+                                android:id="@+id/swipeTurnOnswitch"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                app:sb_checked_color="@color/purpleStatusBar"
+                                app:sb_checked="true"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="?attr/settingsCard"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Ultra-Fast Mode"
+                                android:textSize="23sp"
+                                android:textColor="?attr/normalTextColor"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="0dp"
+                            app:cardBackgroundColor="@color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="Turn on"
+                                android:id="@+id/tvultrafast"
+                                android:gravity="center_vertical"
+                                android:textColor="?attr/darkTextColor"
+                                android:paddingLeft="20dp"/>
+
+                            <com.suke.widget.SwitchButton
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:id="@+id/ultrafastSwitch"
+                                app:sb_checked_color="@color/purpleStatusBar"
+                                app:sb_checked="false"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="?attr/settingsCard"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Web-Page Zoom"
+                                android:textSize="23sp"
+                                android:textColor="?attr/normalTextColor"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="0dp"
+                            app:cardBackgroundColor="@color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="Turn off"
+                                android:id="@+id/tvWPZoom"
+                                android:gravity="center_vertical"
+                                android:textColor="?attr/darkTextColor"
+                                android:paddingLeft="20dp"/>
+
+                            <com.suke.widget.SwitchButton
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:id="@+id/wpZoomSwitch"
+                                app:sb_checked_color="@color/purpleStatusBar"
+                                app:sb_checked="true"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="0dp"
+                            android:visibility="visible"
+                            android:id="@+id/zoomcontrolBtnCard"
+                            app:cardBackgroundColor="@color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="center_vertical"
+                                android:text="Zoom control buttons"
+                                android:textColor="?attr/darkTextColor"
+                                android:paddingLeft="20dp"/>
+
+                            <com.suke.widget.SwitchButton
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:id="@+id/zoomControlSwitch"
+                                app:sb_checked_color="@color/purpleStatusBar"
+                                app:sb_checked="false"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="?attr/settingsCard"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Web-Page Text Size"
+                                android:textSize="23sp"
+                                android:textColor="?attr/normalTextColor"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="0dp"
+                            app:cardBackgroundColor="@color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <abak.tr.com.boxedverticalseekbar.BoxedVertical
+                                    android:id="@+id/boxed_vertical"
+                                    android:layout_width="60dp"
+                                    android:layout_height="250dp"
+                                    android:layout_gravity="start"
+                                    android:layout_marginTop="30dp"
+                                    app:backgroundColor="@color/color_background"
+                                    app:libCornerRadius="100"
+                                    app:defaultImage="@drawable/text_icon"
+                                    app:defaultValue="100"
+                                    app:max="200"
+                                    app:imageEnabled="true"
+                                    app:maxImage="@drawable/text_icon"
+                                    app:minImage="@drawable/text_icon"
+                                    app:progressColor="@color/color_progress"
+                                    app:step="5"
+                                    app:touchDisabled="true" />
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/pointValue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Selected is : 100"
+                                        android:textSize="18sp"
+                                        android:textColor="?attr/darkTextColor"/>
+
+                                    <Button
+                                        android:id="@+id/textSizeDefaultBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="?attr/tabBtnCard"
+                                        android:text="Reset to default"
+                                        android:textColor="?attr/normalTextColor"
+                                        android:padding="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textAllCaps="false"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

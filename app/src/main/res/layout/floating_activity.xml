@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/floatincochange1"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="?attr/cardBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageButton
+        android:background="@color/transparent"
+        android:id="@+id/google_icon_floar"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:src="@drawable/google_icon_float"
+        android:layout_height="230dp"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        tools:ignore="ContentDescription" />
+
+
+    <LinearLayout
+        android:id="@+id/floatsearch_barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/floatToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="false"
+            android:background="?attr/cardBackground"
+            android:orientation="vertical"
+            android:paddingBottom="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9">
+
+                            <ImageButton
+                                android:id="@+id/floatGoogleIconToolbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@color/transparent"
+                                android:paddingTop="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/google_icon"
+                                android:visibility="visible"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageButton
+                                android:id="@+id/floatcancelLoading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/cancel_loading"
+                                android:visibility="gone"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageButton
+                                android:id="@+id/floatRefresh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@color/transparent"
+                                android:padding="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/refresh_selector"
+                                android:visibility="gone"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="0.1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/float_webview_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingTop="2dp"
+                                android:text="@string/search_or_type_url"
+                                android:textSize="15dp"
+                                android:textColor="?attr/normalTextColor"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_grey"/>
+
+        <RelativeLayout
+            android:layout_marginBottom="46dp"
+            android:id="@+id/float_webLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/float_webview_swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <im.delight.android.webview.AdvancedWebView
+                    android:background="@color/transparent"
+                    android:id="@+id/floatWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </im.delight.android.webview.AdvancedWebView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/cardBackground">
+
+        <ProgressBar
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/floatProgressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#26121212"
+            android:progress="0"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/floatchangeinco2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/floatCloseBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/purewhite"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/float_webback"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="7dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/disabled_back"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/float_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="7dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                android:src="@drawable/home"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/float_webnext"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:padding="7dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/web_foeward"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/floatingOpenedSearchBar"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8E000000">
+
+            <LinearLayout
+                android:background="?attr/cardBackground"
+                android:visibility="visible"
+                android:id="@+id/floatanimationEdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="2"
+                    android:id="@+id/searchBarGoogle"
+                    android:layout_weight="0.5">
+
+                    <ImageButton
+                        android:id="@+id/floatSearchBack"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="7dp"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/disabled_back"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/google_icon"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColor="?attr/normalTextColor"
+                        android:id="@+id/float_search_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:hint="@string/search_or_type_url"
+                        android:background="@color/transparent"
+                        android:textColorHint="?attr/darkTextColor"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:text=""
+                        android:textSize="15dp"
+                        tools:ignore="NestedWeights,SpUsage" />
+
+                    <requestFocus/>
+
+                    <ImageView
+                        android:id="@+id/floatsearch_button"
+                        android:layout_width="57dp"
+                        android:layout_height="49dp"
+                        android:layout_weight="0.1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/search"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:background="?attr/cardBackground"
+                android:id="@+id/float_suggestionList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/toolbarBottomView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8E000000"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

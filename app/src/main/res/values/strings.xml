@@ -1,0 +1,882 @@
+<resources>
+    <string name="app_name">SKY!N Browser</string>
+    <string name="search_or_type_url">Search Your Stuff</string>
+    <string name="error">Error…</string>
+    <string name="loading">Loading…</string>
+
+    <string name="switchbtn_inco">In which activity you want to enable Incognito Mode</string>
+
+    <string name="hith">Hi There…</string>
+    <string name="settingthings">We\'re setting things up for you.</string>
+    <string name="establishingSecurity">Establishing security for you.</string>
+    <string name="wego">Here we go.</string>
+
+    <string name="permiCheck">Please check all the permissions are granted successfully otherwise the
+    start button will not work</string>
+    <string name="permialert">Please grant all the permissions to adopt our best to serve you</string>
+    <string name="splitexitAlert">Do you want to save your current data before exiting this window
+        this data will help you to reload it after you open up this window.</string>
+
+
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+
+    <!-- navigation drawer item labels  -->
+
+    //for location
+
+    //for download manager
+    <string name="pause">PAUSE</string>
+    <string name="resume">RESUME</string>
+    <string name="download">Download</string>
+    <string name="delete_title">Are you sure you want to delete %1$s?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="view">Open</string>
+    <string name="retry">RETRY</string>
+    <string name="percent_progress">%1$d%%</string>
+    <string name="download_eta_sec">%1$ds left</string>
+    <string name="download_eta_min">%1$dm %2$ds left</string>
+    <string name="download_eta_hrs">%1$dh %2$dm %3$ds left</string>
+    <string name="download_speed_bytes">%1$d B/s</string>
+    <string name="download_speed_kb">%1$s KB/s</string>
+    <string name="download_speed_mb">%1$s MB/s</string>
+
+    //for history
+
+    //for floating
+    <string name="title_simple_examples">Simple Examples</string>
+    <string name="description_simple_examples">The following examples show the simplest Hover menus possible.  These examples use simple tab Views and only display text in their content screens.</string>
+    <string name="button_launch_hover_foreground">Launch Hover in Foreground</string>
+    <string name="locationtxt">---xx--xx---</string>
+    <string name="conditiontxt">--xx--xx--</string>
+    <string name="temptxt">-x-</string>
+
+    //for Weather
+    <string name="apiKey">a1f6053075835c09300685e345632e9c</string>
+
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="later">Later</string>
+
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+
+    <string name="last_update">Last update: %s</string>
+    <string name="last_update_widget">\nLast update: %s</string>
+
+    <string name="search_title">Search for city</string>
+
+    <string name="downloading_data">Downloading your data …</string>
+    <string name="getting_location">Getting your location …</string>
+
+    <string name="error_dateFormat">DATE FORMAT ERROR</string>
+
+    <string name="speed_unit_mps">m/s</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_kn">kn</string>
+
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="msg_err_parsing_json">Error parsing JSON.</string>
+    <string name="msg_connection_problem">There is a problem with your internet connection.</string>
+    <string name="msg_connection_not_available">Connection not available.</string>
+    <string name="msg_city_not_found">Specified city is not found.</string>
+
+    <string name="weather_sunny"> [img src=sunny/]</string>
+    <string name="weather_clear_night">[img src=moon/]</string>
+    <string name="weather_foggy">[img src=fog/]</string>
+    <string name="weather_cloudy">[img src=cloudy/]</string>
+    <string name="weather_rainy">[img src=rain/]</string>
+    <string name="weather_snowy">[img src=snow/]</string>
+    <string name="weather_thunder">[img src=lightning/]</string>
+    <string name="weather_drizzle">[img src=fog/]</string>
+
+
+    <string name="mpage_weather_sunny" translatable="false">&#xf00d;</string>
+    <string name="mpage_weather_clear_night" translatable="false">&#xf02e;</string>
+    <string name="mpage_weather_foggy" translatable="false">&#xf014;</string>
+    <string name="mpage_weather_cloudy" translatable="false">&#xf013;</string>
+    <string name="mpage_weather_rainy" translatable="false">&#xf019;</string>
+    <string name="mpage_weather_snowy" translatable="false">&#xf01b;</string>
+    <string name="mpage_weather_thunder" translatable="false">&#xf01e;</string>
+    <string name="mpage_weather_drizzle" translatable="false">&#xf01c;</string>
+
+
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="msg_too_many_requests">Too many requests. Please try again.</string>
+
+    <!-- 1: temperature; 2: unit -->
+    <string name="dash_clock_status">%1$s%2$s</string>
+    <!-- 1: temperature; 2: unit; 3: weather description -->
+    <string name="dash_clock_expanded_title">%1$s%2$s - %3$s</string>
+    <!-- 1: city; 2: country; 3: wind; 4: speed units; 5: pressure; 6: pressure units; 7: humidity -->
+    <string name="dash_clock_expanded_body">%1$s, %2$s\nWind: %3$s %4$s\nPressure: %5$s %6$s\nHumidity: %7$s %%\n</string>
+
+    <string name="location_settings">Location Settings</string>
+    <string name="location_settings_message">Location is not enabled. Do you wish to go to the settings menu?</string>
+    <string name="location_settings_button">Settings</string>
+    <string name="feedback_txt">We believe that our user\'s are our greatest tutor. If, you are having any problems and suggestions,
+    we are pleased to solve that.</string>
+    <string name="about_txt">we believe that future is advance and safe so we make products that help
+    our users to make their life worth living.</string>
+    <string name="addressx">Chetnya Nagar, Itarsi(M.P.) Bharat(India)</string>
+    <string name="desktopalert">To apply the changes please restart the activity</string>
+    <string name="privacypolicy">SKYIMPE. INC built the SKYIN BROWSER appwhich is a fast secure and  Free browser. This SERVICE is provided by SKYIMPE.INC at no cost and is intended for use as is.\n
+
+       \n This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.\n
+        \n If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that  we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\n
+        \n The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at SKYIN BROWSER unless otherwise defined in this Privacy Policy.\n
+        \n \n Information Collection and Use \n \n
+        For a better experience, while using our Service,  we may require you to provide us with certain personally identifiable information, including but not limited to Storage permission for keeping your downloaded file safe.Internet permission for web browsing.Camera permission for QR scanning.display over apps permission for floating mode. The information that I request will be retained on your device and is not collected by  us in any way.\n
+        \n The app does use third party services that may collect information used to identify you.\n
+        \n Link to privacy policy of third party service providers used by the app\n
+        \n \n Google Play Services \n
+        Log Data \n \n
+         We want to inform you that whenever you use our  Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.\n
+        \n \n Cookies \n \n
+        Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device\'s internal memory.\n
+        \n This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.\n
+        \n \n Service Providers \n \n
+        I may employ third-party companies and individuals due to the following reasons:\n
+        To facilitate our Service;\n
+        To provide the Service on our behalf;\n
+        To perform Service-related services; or \n
+To assist us in analyzing how our Service is used. \n
+I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.\n
+        \n Security \n \n
+        I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.\n
+        \n \n Links to Other Sites \n \n
+        This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.\n
+        \n \n Children’s Privacy \n \n
+        These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.\n
+        \n \n Changes to This Privacy Policy \n \n
+        I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.\n
+        \n \n Contact Us \n \n
+        If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at skyinbroswer@gmail.com.
+</string>
+    <string name="dmon">Desktop Site \n (Turned On)</string>
+    <string name="dmoff">Desktop Site \n (Turned On)</string>
+    <string name="ad_id_banner">ca-app-pub-7744357389506091/6304093723</string>
+    <string name="updateMessage1">
+        There is new version of our SKY!N Browser is available on the Google Play Store i.e.
+    </string>
+    <string name="updateMessage2">
+        Can you please update your browser to get lot of new features and improvements.
+        \n And thanks for your attention towards us.
+        \n Have a great day ahead…
+    </string>
+    <string name="darkThemeWeb">Apply dark theme on WebView(Experimental)</string>
+    <string name="android_ago_just_now">
+        Just now
+    </string>
+
+    //for tabs
+    <string name="album_title_bookmarks">
+        Bookmarks
+    </string>
+    <string name="album_title_history">
+        History
+    </string>
+    <string name="album_title_home">
+        Home
+    </string>
+    <string name="album_untitled">
+        Untitled
+    </string>
+
+    <!-- Clear -->
+    <string name="clear_label">
+        Clear
+    </string>
+    <string name="clear_menu_done_all">
+        Done all
+    </string>
+    <string name="clear_title_quit">
+        Clear when application exits
+    </string>
+    <string name="clear_title_bookmarks">
+        Clear Bookmarks
+    </string>
+    <string name="clear_title_cache">
+        Clear Cache
+    </string>
+    <string name="clear_title_cookie">
+        Clear Cookies
+    </string>
+    <string name="clear_title_form_data">
+        Clear Form data
+    </string>
+    <string name="clear_title_history">
+        Clear History
+    </string>
+    <string name="clear_title_passwords">
+        Clear Passwords
+    </string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_hint">
+        Input Title
+    </string>
+    <string name="dialog_se_hint">
+        https://www.google.com/search?q=
+    </string>
+    <string name="dialog_ua_hint">
+        Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+    </string>
+    <string name="dialog_sign_in_username">
+        Username
+    </string>
+    <string name="dialog_sign_in_password">
+        Password
+    </string>
+    <string name="dialog_button_positive">
+        OK
+    </string>
+    <string name="dialog_button_negative">
+        Cancel
+    </string>
+    <string name="dialog_button_custom">
+        Custom
+    </string>
+    <string name="dialog_title_download">
+        Do you want to download the file?
+    </string>
+    <string name="dialog_title_resubmission">
+        Resubmit
+    </string>
+    <string name="dialog_title_warning">
+        Warning
+    </string>
+    <string name="dialog_title_sign_in">
+        Sign in
+    </string>
+    <string name="dialog_content_resubmission">
+        Would you like to resubmit your data?
+    </string>
+    <string name="dialog_content_ssl_error">
+        The certificate of the site is not trusted. Proceed anyway?
+    </string>
+    <string name="dialog_content_donation">
+        The income from donations will be used to:\n
+        - Improve the development environment.\n
+        - Improve the developer\'s enthusiasm.\n\n
+        All donations will be considered:\n
+        - Unpaid which mains the donor can not command or force the developer to do anything the donor want.\n
+        - Owned by the developer.\n
+        - The donor have agreed all above points.\n\n
+        Alipay:\n
+        matthewlee0725@gmail.com
+    </string>
+    <string name="dialog_content_upload">
+        Currently, File upload is only supported on Android 5.0 and Above.
+    </string>
+
+    <!-- List -->
+    <string name="list_empty">
+        Current list is empty
+    </string>
+
+    <!-- Main -->
+    <string name="main_menu_new_tab">
+        New tab
+    </string>
+    <string name="main_menu_copy_link">
+        Copy link
+    </string>
+    <string name="main_menu_save">
+        Save
+    </string>
+    <string name="main_omnibox_input_hint">
+        Search or type URL
+    </string>
+    <string name="main_relayout_ok">
+        OK
+    </string>
+    <string name="main_about_blank">
+        about:blank
+    </string>
+
+    <!-- Notification -->
+    <string name="notification_content_holder">
+        Click to View Pages
+    </string>
+
+    <!-- Readability -->
+    <string name="readability_label">
+        Readability
+    </string>
+    <string name="readability_menu_background">
+        Background
+    </string>
+    <string name="readability_menu_share">
+        Share
+    </string>
+    <string name="readability_empty">
+        Failed to load Readability, Please check your network connection.
+    </string>
+
+    <!-- Search -->
+    <string name="search_hint">
+        Search
+    </string>
+
+    <!-- Settings -->
+    <string name="setting_label">
+        Settings
+    </string>
+    <!-- Browser setting -->
+    <string name="setting_title_browser">
+        Browser Settings
+    </string>
+    <!-- Search engine -->
+    <string name="setting_title_search_engine">
+        Search Engine
+    </string>
+    <string name="setting_summary_search_engine_google">
+        Google
+    </string>
+    <string name="setting_summary_search_engine_duckduckgo">
+        DuckDuckGo
+    </string>
+    <string name="setting_summary_search_engine_startpage">
+        StartPage
+    </string>
+    <string name="setting_summary_search_engine_bing">
+        Bing
+    </string>
+    <string name="setting_summary_search_engine_baidu">
+        Baidu
+    </string>
+    <string name="setting_summary_search_engine_custom">
+        Custom
+    </string>
+    <!-- Notification -->
+    <string name="setting_title_notification_priority">
+        Notification Priority
+    </string>
+    <string name="setting_summary_notification_priority_default">
+        Default
+    </string>
+    <string name="setting_summary_notification_priority_high">
+        High
+    </string>
+    <string name="setting_summary_notification_priority_low">
+        Low
+    </string>
+    <!-- Omnibox position -->
+    <string name="setting_title_omnibox_position">
+        Omnibox Position
+    </string>
+    <string name="setting_summary_omnibox_position_top">
+        Top
+    </string>
+    <string name="setting_summary_omnibox_position_bottom">
+        Bottom
+    </string>
+    <!-- Omnibox control -->
+    <string name="setting_title_omnibox_control">
+        Omnibox Control
+    </string>
+    <string name="setting_summary_omnibox_control">
+        Swipe omnibox left/right to switch tabs
+    </string>
+    <!-- Volume key scroll -->
+    <string name="setting_title_volume_control">
+        Volume Control
+    </string>
+    <string name="setting_summary_vc_switch_tabs">
+        Switch Tabs
+    </string>
+    <string name="setting_summary_vc_scroll_webpage">
+        Scroll Webpage
+    </string>
+    <string name="setting_summary_vc_system_default">
+        System Default
+    </string>
+    <!-- Images -->
+    <string name="setting_title_images">
+        Images
+    </string>
+    <string name="setting_summary_images">
+        Enable Network images
+    </string>
+    <!-- Cookies -->
+    <string name="setting_title_cookie">
+        Cookies
+    </string>
+    <string name="setting_summary_cookie">
+        Enable Cookies
+    </string>
+    <!-- JavaScript -->
+    <string name="setting_title_javascript">
+        JavaScript
+    </string>
+    <string name="setting_summary_javascript">
+        Enable JavaScript
+    </string>
+    <!-- Location -->
+    <string name="setting_title_location">
+        Location
+    </string>
+    <string name="setting_summary_location">
+        Allow websites to access your location
+    </string>
+    <!-- Multiple windows -->
+    <string name="setting_title_multiple_windows">
+        Multiple Windows
+    </string>
+    <string name="setting_summary_multiple_windows">
+        Enable Multiple windows
+    </string>
+    <!-- Scroll bar -->
+    <string name="setting_title_scroll_bar">
+        Scroll Bar
+    </string>
+    <string name="setting_summary_scroll_bar">
+        Show/Hide scroll bar on webpages
+    </string>
+    <!-- Text reflow -->
+    <string name="setting_title_text_reflow">
+        Text Reflow
+    </string>
+    <string name="setting_summary_text_reflow">
+        Enable text reflow
+    </string>
+    <!-- User Agent -->
+    <string name="setting_title_user_agent">
+        User Environment
+    </string>
+    <string name="setting_summary_user_agent_default">
+        Default
+    </string>
+    <string name="setting_summary_user_agent_desktop">
+        Desktop
+    </string>
+    <string name="setting_summary_user_agent_custom">
+        Custom
+    </string>
+    <!-- Rendering -->
+    <string name="setting_title_rendering">
+        Rendering
+    </string>
+    <string name="setting_summary_rendering_default">
+        Default
+    </string>
+    <string name="setting_summary_rendering_grayscale">
+        Grayscale
+    </string>
+    <string name="setting_summary_rendering_inverted">
+        Inverted
+    </string>
+    <string name="setting_summary_rendering_inverted_grayscale">
+        Inverted Grayscale
+    </string>
+    <!-- AdBlock setting -->
+    <string name="setting_title_adblock">
+        AdBlock
+    </string>
+    <string name="setting_summary_adblock">
+        Enable AdBlock
+    </string>
+    <string name="setting_title_whitelist">
+        Whitelist
+    </string>
+    <string name="setting_summary_whitelist">
+        Allow these sites show ads
+    </string>
+    <string name="setting_title_export_whilelist">
+        Export whitelist
+    </string>
+    <string name="setting_title_import_whilelist">
+        Import whilelist
+    </string>
+    <string name="whilelist_filename">
+        NinjaWhitelist
+    </string>
+    <!-- Readability setting -->
+    <string name="setting_title_readability">
+        Readability
+    </string>
+    <string name="setting_title_token">
+        Token
+    </string>
+    <string name="setting_summary_readability">
+        Enable Readability
+    </string>
+    <string name="setting_summary_token">
+        Set Readability Token
+    </string>
+    <!-- Data setting -->
+    <string name="setting_title_data">
+        Data
+    </string>
+    <!-- Passwords -->
+    <string name="setting_title_passwords">
+        Passwords
+    </string>
+    <string name="setting_summary_passwords">
+        Save Passwords
+    </string>
+    <!-- Bookmarks -->
+    <string name="setting_title_export_bookmarks">
+        Export Bookmarks
+    </string>
+    <string name="setting_title_import_bookmarks">
+        Import Bookmarks
+    </string>
+    <string name="bookmarks_filename">
+        NinjaBookmarks
+    </string>
+    <!-- Clear -->
+    <string name="setting_title_clear_control">
+        Clear Control
+    </string>
+    <!-- Others setting -->
+    <string name="setting_title_others">
+        Others
+    </string>
+    <!-- Version -->
+    <string name="setting_title_version">
+        Version
+    </string>
+    <!-- License -->
+    <string name="setting_title_license">
+        License
+    </string>
+    <!-- Contact -->
+    <string name="setting_title_donation">
+        Donate
+    </string>
+
+    <!-- Toast -->
+    <string name="toast_add_bookmark_successful">
+        Bookmark Successfully Added
+    </string>
+    <string name="toast_add_bookmark_failed">
+        Can\'t add this page to bookmark
+    </string>
+    <string name="toast_add_to_home_successful">
+        Successfully added to Home
+    </string>
+    <string name="toast_add_to_home_failed">
+        Failed to add to Home
+    </string>
+    <string name="toast_add_token_successful">
+        Successfully added Readability API
+    </string>
+    <string name="toast_add_whitelist_successful">
+        Successfully added Domain
+    </string>
+    <string name="toast_already_at_the_front">
+        Already at the front
+    </string>
+    <string name="toast_already_exist_in_home">
+        Already exist in home
+    </string>
+    <string name="toast_clear_successful">
+        Successfully Cleared
+    </string>
+    <string name="toast_clear_failed">
+        Failed to Clear
+    </string>
+    <string name="toast_copy_successful">
+        Successfully Copied
+    </string>
+    <string name="toast_delete_bookmark_successful">
+        Successfully Deleted Bookmark
+    </string>
+    <string name="toast_delete_successful">
+        Successfully Deleted
+    </string>
+    <string name="toast_domain_already_exists">
+        Domain already exists
+    </string>
+    <string name="toast_double_taps_quit">
+        Press again to exit
+    </string>
+    <string name="toast_emoji">
+        (๑•̀ㅂ•́)و✧
+    </string>
+    <string name="toast_export_bookmarks_successful">
+        Exported bookmarks file at:&#160;
+    </string>
+    <string name="toast_export_bookmarks_failed">
+        Failed to export Bookmarks
+    </string>
+    <string name="toast_export_whitelist_successful">
+        Exported whitelist file at:&#160;
+    </string>
+    <string name="toast_export_whitelist_failed">
+        Failed to export Whitelist
+    </string>
+    <string name="toast_import_bookmarks_successful">
+        Imported bookmarks count:&#160;
+    </string>
+    <string name="toast_import_bookmarks_failed">
+        Failed to import Bookmarks
+    </string>
+    <string name="toast_import_whitelist_successful">
+        Imported domains count:&#160;
+    </string>
+    <string name="toast_import_whitelist_failed">
+        Failed to import Whitelist
+    </string>
+    <string name="toast_input_empty">
+        You haven\'t input anything
+    </string>
+    <string name="toast_invalid_domain">
+        Invalid domain
+    </string>
+    <string name="toast_load_error">
+        Can\'t load this URL
+    </string>
+    <string name="toast_load_in_background">
+        Loading in background
+    </string>
+    <string name="toast_need_restart">
+        Please restart the application for changes to take effect
+    </string>
+    <string name="toast_new_tab_successful">
+        Successfully opened in a new tab
+    </string>
+    <string name="toast_open_file_manager_failed">
+        Failed to open File Manager
+    </string>
+    <string name="toast_refresh_failed">
+        Can\'t refresh this page
+    </string>
+    <string name="toast_relayout_successful">
+        Successfully Relayout
+    </string>
+    <string name="toast_screenshot_successful">
+        Saved screenshot at:&#160;
+    </string>
+    <string name="toast_screenshot_failed">
+        Failed to capture Screenshot
+    </string>
+    <string name="toast_share_failed">
+        Can\'t share this page
+    </string>
+    <string name="toast_start_download">
+        Starting download
+    </string>
+    <string name="toast_token_empty">
+        Please set Readability token
+    </string>
+    <string name="toast_wait_a_minute">
+        Please wait for a moment
+    </string>
+
+    <!-- Token -->
+    <string name="token_label">
+        Token
+    </string>
+    <string name="token_edit_hint">
+        Readability token
+    </string>
+    <string name="token_add">
+        Add
+    </string>
+    <string name="token_desc">
+        Go to https://www.readability.com/developers/api to get your own Readability token
+    </string>
+
+    <!-- Whitelist -->
+    <string name="whitelist_label">
+        Whitelist
+    </string>
+    <string name="whitelist_menu_clear">
+        Clear
+    </string>
+    <string name="whitelist_edit_hint">
+        Domain
+    </string>
+    <string name="whitelist_add">
+        Add
+    </string>
+    <string name="sp_anchor">
+        SP_ANCHOR_9
+    </string>
+    <string name="sp_omnibox_control">
+        SP_OMNIBOX_CONTROL_9
+    </string>
+    <string name="cameramsgdialog">Sorry Boss, your Browser can\'t serve you \"QR Code Scan Feature\"
+     without camera permissions.😢 /n Note: we\'ll not grab any of your data.😊</string>
+
+    <string name="storagemsgdialog">Sorry Boss, your Browser can\'t serve you \"Downloading files,Caching the
+        WebPages,and much more for your smooth experience\" without storage permissions.😢
+    /n Note: we\'ll not grab any of your data.😊</string>
+
+
+    //for vpn
+    <string name="connect">Connect</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+    <string name="help">Help</string>
+    <string name="refresh">Refresh</string>
+    <string name="speed">Speed</string>
+    <string name="hostname">Hostname</string>
+    <string name="score">Score</string>
+    <string name="score_short">Score</string>
+    <string name="ping">Ping</string>
+    <string name="session">Session</string>
+    <string name="uptime">Uptime</string>
+    <string name="owner">Owner</string>
+    <string name="tcp_port" translatable="false">TCP</string>
+    <string name="udp_port" translatable="false">UDP</string>
+    <string name="l2tp_support">L2TP Support</string>
+    <string name="l2tp_supported">Yes</string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="connection_error">Error when trying get data from server. Tap to try again!</string>
+    <string name="no_network">Your device is not connect to any network\nPlease connect any wifi or enable mobile data to continue</string>
+    <string name="loading_text">App is fetching data from server\nPlease wait in a moment</string>
+    <string name="to_top">Back to top</string>
+    <string name="country">Country</string>
+    <string name="sort_property">Sort by</string>
+    <string name="sort_type">Sort type</string>
+    <string name="sort_asc">Ascending</string>
+    <string name="sort_desc">Descending</string>
+    <string name="apply">Apply</string>
+    <string name="sort_default">Default</string>
+    <string name="feature_not_available">You can\'t do this action at this moment</string>
+    <!--- Settings -->
+    <string name="setting_cache_label">Cache save time</string>
+    <string name="setting_cache_subtitle">Is the time data will save in device after get data from server</string>
+    <string name="setting_cache_auto_clear_label">Cache will auto clear at:</string>
+    <string name="setting_cache_clear">Clear now</string>
+    <string name="setting_clear_cache_success">Clear cache success</string>
+    <string name="setting_clear_cache_error">Some thing when wrong. Cache can\'t clear</string>
+    <string-array name="setting_cache_time">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hours</item>
+        <item>2 hours</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+    </string-array>
+    <!-- Detail -->
+    <string name="total_user">Total user</string>
+    <string name="total_traffic">Total traffic</string>
+    <string name="log_type">Log type</string>
+    <string name="connect_to_this_server">Connect to this server</string>
+    <string name="install_openvpn">Install OpenVPN Connect</string>
+    <string name="save_config_file">Save OpenVPN config file</string>
+    <string name="saved_ovpn_file_in">Saved ovpn file in %s. Import to OpenVPN Connect to use it</string>
+    <string name="connect_via_l2tp">Connect via L2TP VPN</string>
+    <string name="connect_use_protocol">Connect use protocol:</string>
+    <string name="retry_connect">Retry connect</string>
+    <string name="vpn_auth_failure">Auth failure</string>
+    <string name="connecting">Connecting…</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnecting">Disconnecting…</string>
+    <string name="canceled">Canceled</string>
+    <string name="copy_ip">Copy IP to clipboard</string>
+    <string name="copy_hostname">Copy HostName to clipboard</string>
+    <string name="copied">Copied</string>
+    <!--VPN String -->
+    <string name="unknown_state">Unknown</string>
+    <string name="notification_title" translatable="false">SKY!N VPN - %s</string>
+    <string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
+    <string name="check_ip">Check your current public IP</string>
+    <string name="about_html">%s is an application allow connection to free VPN server by volunteer around the world from VPN Gate open source project. More information about VPN Gate project in link bellow.</string>
+    <string name="license_html">%s use a part of ICS OpenVPN code as library. See full license in link bellow.</string>
+    <string name="vpn_gate_link" translatable="false">http://www.vpngate.net/en/about_overview.aspx</string>
+    <string name="version">Version:</string>
+    <string name="license_link" translatable="false">https://github.com/schwabe/ics-openvpn/blob/master/doc/LICENSE.txt</string>
+    <string name="license">License</string>
+    <string name="operator_message">Operator message</string>
+    <string name="hide_op_message_5time">Hide all message next 5 connect time</string>
+    <string name="close">Close</string>
+    <string name="name_hint">Your name. Mininum %d character</string>
+    <string name="content_hint">What you need help?\nMinimum %d character</string>
+    <string name="btn_send">Send</string>
+    <string name="name_error_message">Name must be longer than %d character</string>
+    <string name="content_error_message">Content must be longer than %d character</string>
+    <string name="help_request_from">[VPN]Help request from: </string>
+    <string name="send_email">Send email</string>
+    <string name="email_error_fix">Please check correct error first</string>
+    <string name="error_load_profile">Error load VPN profile</string>
+    <string name="traffic_session">Session traffic</string>
+    <string name="clear_statistics">Clear statistics</string>
+    <string name="get_pro_version">Get Pro version</string>
+    <string name="status">Status</string>
+    <string name="tap_to_disconnect">Tap button to disconnect from %s</string>
+    <string name="tap_to_connect_last">Tap button to connect to %s</string>
+    <string name="no_last_vpn_server">Please select a VPN Server by Swiping Up</string>
+    <string name="connect_one_warning">You need connect to at least one VPN Server before access this function</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="feature_available_in_pro">This feature only available in Pro version</string>
+    <string name="block_ads_setting_label">Block Ads (Pro only)</string>
+    <string name="block_ads_setting_hint">Block ads in all app and browser when VPN is connected use DNS</string>
+    <string name="udp_setting_label">Include UDP server</string>
+    <string name="udp_setting_hint">Include UDP server in server list</string>
+    <string name="setting_apply_on_next_connection_time">This setting will apply on next connection time</string>
+    <string name="dns_setting_label">Use custom DNS</string>
+    <string name="dns_setting_hint">Use custom DNS when connected to VPN Server instead of default Google DNS (8.8.8.8/8.8.4.4).\nThis setting will turn off Block Ads setting when enabled</string>
+    <string name="dns_ip_1" translatable="false">DNS 1</string>
+    <string name="dns_ip_2">DNS 2 (optional)</string>
+    <string name="dns_ip_1_hint" translatable="false">8.8.8.8</string>
+    <string name="dns_ip_2_hint" translatable="false">8.8.4.4</string>
+    <string name="use_domain_label">Use domain to connect</string>
+    <string name="use_domain_hint">Use domain .opengw.net to connect to VPN Server instead of Server IP Address</string>
+    <string name="empty_search_result">No sever found with keyword \"%1$s\"</string>
+    <!-- L2TPConnect -->
+    <string name="l2tp_connect_title">Connect to \"%s\" via L2TP/IPSec</string>
+    <string name="l2tp_connect_hint">To connect to server \"%s\" via L2TP/IPSec VPN. Please follow several step bellow</string>
+    <string name="l2tp_connect_add">1. Add new VPN Connection in VPN Setting like this</string>
+    <string name="l2tp_tap_to_connect">2. Tap to created VPN Connection to connect</string>
+    <string name="loading_servers_please_wait">App is fetching data from server\nPlease wait for a moment…</string>
+    <string name="loading_failed_please_try_again">Loading Failed! Please try again</string>
+    <string name="txt_disconnect">Disconnect</string>
+    <string name="txt_connect">Connect</string>
+    <string name="txt_loading">Please Wait</string>
+    <string name="session_upload">Session Upload</string>
+    <string name="session_download">Session Download</string>
+    <string name="_0_bytes">0 Bytes</string>
+    <string name="total_upload">Total Upload</string>
+    <string name="total_download">Total Download</string>
+    <string name="ip">IP</string>
+    <string name="unlimited_vpn_access">Unlimited VPN Access</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="daily_total_usage">Daily/Total Usage</string>
+    <string name="usage_history">Usage History</string>
+    <string name="selNewsLang">Select your News Language…</string>
+    <string name="selAppTheme">Select your Default Theme…</string>
+
+
+    //for voice search
+    <string name="speech_prompt">Express your own! &#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+</resources>

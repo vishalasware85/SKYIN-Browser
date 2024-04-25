@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/cardBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp">
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/transparent"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/deleteMySites"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:fontFamily="@font/playflair"
+            android:textColor="?attr/normalTextColor"
+            android:background="?attr/tabBtn"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/editMySites"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="edit"
+            android:fontFamily="@font/playflair"
+            android:textColor="?attr/normalTextColor"
+            android:background="?attr/tabBtn"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearAllMySites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All Data"
+        android:fontFamily="@font/playflair"
+        android:textColor="?attr/normalTextColor"
+        android:background="?attr/tabBtn"
+        android:layout_margin="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"/>
+</LinearLayout>

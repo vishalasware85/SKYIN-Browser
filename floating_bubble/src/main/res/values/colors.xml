@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors for the Hover menu itself -->
+    <color name="hover_navigator_color">#be3b3b3b</color>
+    <color name="hover_shade_color">#92000000</color>
+
+    <!-- Colors for drill-down menus that can appear in Hover's content area -->
+    <color name="hover_content_menu_item_title_color">#666666</color>
+</resources>

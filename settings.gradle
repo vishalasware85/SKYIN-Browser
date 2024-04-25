@@ -1,0 +1,2 @@
+include ':app', ':blur_behind', ':boxedverticalseekbarlib', ':floating_bubble', ':rippleeffect', ':unity-ads'
+rootProject.name='SKYIN Browser'

@@ -1,0 +1,258 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.skyinbrowser">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:resizeableActivity="false"
+        android:name="com.skyinbrowser.Floating.App"
+        android:appComponentFactory="AnyStrings"
+        tools:replace="android:appComponentFactory"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/launcher"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:hardwareAccelerated="true"
+        android:theme="@style/DarkTheme"
+        tools:overrideLibrary="abak.tr.com.boxedverticalseekbar"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+
+        <provider
+            android:authorities="com.skyinbrowser.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".splash" android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="about"/>
+                <data android:scheme="ethereum"/>
+                <data android:scheme="bitcoin"/>
+                <data android:scheme="ofa"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+                <data android:mimeType="application/vnd.wap.xhtml+xml"/>
+                <data android:mimeType="multipart/related"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/ogg"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".\\.htm"/>
+                <data android:pathPattern=".\\.html"/>
+                <data android:pathPattern=".\\.mht"/>
+                <data android:pathPattern=".\\.mhtml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="about"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2057521788704366~3660658543"/>
+
+        <activity
+            android:name=".Mpage"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity
+            android:name=".Addons.AddonsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustNothing|stateHidden"
+            android:theme="@style/TranslucentNewsAppTheme">
+        </activity>
+        <activity android:name=".MoreSites.more_sites_popup"
+            android:theme="@style/TranslucentAppTheme"/>
+        <activity
+            android:name=".for_search.search_bar_place"
+            android:windowSoftInputMode="stateVisible"
+            android:theme="@style/TranslucentAppTheme"/>
+        <activity android:name=".bookmark.BookmarkAdderAndEdit" />
+        <activity android:name=".for_news.English.MoreNewsActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name=".tabs.TabsMain"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+        </activity>
+        <activity android:name=".split.SpltVertical"
+            android:theme="@style/TranslucentAppTheme"/>
+
+        <service android:name=".Floating.SingleSectionNotificationHoverMenuService" />
+
+        <activity android:name=".IntroActivity" />
+
+        <activity android:name=".split.SplitAlertWindow"
+            android:theme="@style/TranslucentAppTheme"/>
+
+        <activity android:name=".MoreSites.MySitesAdder" />
+
+        <activity android:name=".weather.Weather_activity"
+            android:theme="@style/TranslucentAppTheme"/>
+
+        <activity android:name=".PrivacyPolicy" />
+
+        <activity android:name=".weather.WeatherCustomLocationSetter"
+            android:theme="@style/TranslucentAppTheme"/>
+
+        <activity android:name=".for_news.Hindi.MoreHindiNews" />
+
+        <activity android:name=".for_news.NewsDetailActivity"
+            android:theme="@style/TranslucentNewsAppTheme"/>
+
+        <activity android:name=".DownloadManager.DownloadActivity"
+            android:theme="@style/TranslucentNewsAppTheme"/>
+
+        <activity android:name=".DownloadManager.DownloadStarter"
+            android:theme="@style/TranslucentAppTheme"/>
+
+        <activity android:name=".for_news.NewsBookmarks" />
+
+        <service
+            android:name=".weather.widgets.DashClockWeatherExtension"
+            android:label="@string/app_name"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2" />
+            <meta-data
+                android:name="worldReadable"
+                android:value="true" />
+        </service>
+
+        <receiver android:name=".weather.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".vpn.ui.VpnCurrentStatusActivity" />
+
+        <activity android:name=".vpn.ui.VpnDetailsActivity" />
+
+        <activity android:name=".vpn.ui.VpnMainActivity"/>
+
+        <activity android:name=".LanguageSelector" />
+        <activity android:name=".SampActivity" />
+
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNService"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainLayout"
+    tools:context=".Mpage">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/mainFullLayout"
+        android:layout_weight="0.1"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:background="?attr/windowBackground"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/main_collapsing_toolbar"
+                android:layout_width="match_parent"
+                app:titleEnabled="false"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/weatherCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/gradToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="-80dp"
+                        android:layout_marginRight="-80dp"
+                        android:layout_marginLeft="-80dp"
+                        android:background="?attr/toolbar">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/weather_icon"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"
+                                        android:textColor="@color/purewhite"
+                                        android:textSize="54sp"
+                                        android:gravity="center_horizontal|top"/>
+
+                                    <LinearLayout
+                                        android:layout_weight="0.1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_weight="0.1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:text="@string/locationtxt"
+                                                    android:id="@+id/location"
+                                                    android:layout_width="wrap_content"
+                                                    android:maxLines="1"
+                                                    android:textColor="@color/purewhite"
+                                                    android:fontFamily="@font/play_flair"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="18sp" />
+
+                                                <TextView
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:text="@string/conditiontxt"
+                                                    android:textStyle="normal"
+                                                    android:id="@+id/condition"
+                                                    android:maxLines="1"
+                                                    android:textColor="@color/purewhite"
+                                                    android:fontFamily="sans-serif-black"
+                                                    android:layout_width="wrap_content"
+                                                    android:ellipsize="end"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="16sp" />
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_gravity="center_horizontal"
+                                                android:orientation="horizontal"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/temp"
+                                                    android:text="@string/temptxt"
+                                                    android:fontFamily="sans-serif-black"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/purewhite"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="20sp" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <com.balysv.materialripple.MaterialRippleLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            app:mrl_rippleOverlay="true"
+                                            app:mrl_rippleColor="?attr/rippleColor"
+                                            app:mrl_rippleAlpha="0.2"
+                                            app:mrl_rippleDelayClick="false"
+                                            app:mrl_rippleHover="true"
+                                            app:mrl_rippleRoundedCorners="100dp"
+                                            app:mrl_rippleDuration="100"
+                                            android:layout_marginTop="20dp">
+                                            <ImageView
+                                                android:id="@+id/weather_popup_menu"
+                                                android:scaleType="centerCrop"
+                                                android:background="@color/transparent"
+                                                android:layout_gravity="center"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/menu_light"
+                                                android:padding="2dp"/>
+                                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/maintoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentInsetStart="0dp"
+                    android:contentInsetLeft="0dp"
+                    app:layout_collapseMode="pin"
+                    app:contentInsetLeft="0dp"
+                    android:layout_gravity="bottom"
+                    app:contentInsetStart="0dp"
+                    android:background="@color/transparent"
+                    android:backgroundTint="@color/transparent">
+
+                    <LinearLayout
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/searchbar_bg"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp">
+
+                        <LinearLayout
+                            android:id="@+id/mainWebCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:orientation="horizontal">
+                            <ImageButton
+                                android:id="@+id/google_icon_in_toolbar"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@color/transparent"
+                                android:paddingTop="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/google_icon"
+                                android:visibility="visible"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:id="@+id/webview_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"
+                                android:gravity="center_vertical"
+                                android:hint="@string/search_or_type_url"
+                                android:maxLines="1"
+                                android:paddingTop="2dp"
+                                android:text="@string/search_or_type_url"
+                                android:textColor="?attr/darkTextColor"
+                                android:textSize="15dp" />
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:mrl_rippleOverlay="true"
+                                app:mrl_rippleColor="?attr/rippleColor"
+                                app:mrl_rippleAlpha="0.2"
+                                app:mrl_rippleDelayClick="false"
+                                app:mrl_rippleHover="true"
+                                app:mrl_rippleRoundedCorners="100dp"
+                                app:mrl_rippleDuration="100"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:id="@+id/voiceSearchMpage">
+                                <ImageButton
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="13dp"
+                                    android:background="@color/transparent"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/mic_icon"
+                                    tools:ignore="ContentDescription" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/main_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            android:background="?attr/windowBackground"
+            android:cacheColorHint="@color/transparent"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <FrameLayout
+                    android:id="@+id/speedDialFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <FrameLayout
+                    android:id="@+id/newsMpageFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mainScrollFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="65dp"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/scroll_up"
+            app:backgroundTint="?attr/windowBackground"
+            android:hapticFeedbackEnabled="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainFullWebLayout"
+        android:orientation="vertical"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="45dp"
+        app:cardCornerRadius="0dp"
+        android:layout_weight="0.1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            android:visibility="visible"
+            android:id="@+id/webview_toolbar">
+
+            <LinearLayout
+                android:id="@+id/mpagecard4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="?attr/cardBackground"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageButton
+                        android:id="@+id/mainWebRefresh"
+                        android:scaleType="centerInside"
+                        android:layout_margin="5dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/refresh"
+                        android:background="@color/transparent"/>
+
+                    <ImageButton
+                        android:id="@+id/mainwebCancelLoading"
+                        android:layout_width="40dp"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cancel_loading"
+                        android:background="@color/transparent"
+                        android:visibility="gone"/>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:padding="5dp"
+                        app:mrl_rippleOverlay="true"
+                        app:mrl_rippleColor="?attr/rippleColor"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleDelayClick="false"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleRoundedCorners="40dp">
+                        <ImageButton
+                            android:id="@+id/main_popup"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:src="?attr/newsDetailMenu"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:visibility="visible"
+                            tools:ignore="ContentDescription" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <TextView
+                        android:id="@+id/webview_text_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical|start"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:ellipsize="end"
+                        android:textColor="?attr/normalTextColor"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="5dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/vpnBtnWebtoolbar"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:src="@drawable/vpn_logo"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/search_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/for_webview_swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent">
+            <im.delight.android.webview.AdvancedWebView
+                android:id="@+id/mainweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </im.delight.android.webview.AdvancedWebView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/main_popup"/>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:id="@+id/incochange3"
+        app:cardElevation="0dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleColor="?attr/rippleColor"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleRoundedCorners="20dp"
+                app:mrl_rippleDuration="100"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/webback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="13dp"
+                    android:src="@drawable/disabled_back"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleColor="?attr/rippleColor"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleRoundedCorners="20dp"
+                app:mrl_rippleDuration="100"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/webnext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="13dp"
+                    android:src="@drawable/web_foeward"
+                    tools:ignore="ContentDescription" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleColor="?attr/rippleColor"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleRoundedCorners="20dp"
+                app:mrl_rippleDuration="100"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/open_bottom_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:padding="13dp"
+                    android:src="@drawable/bottom_sheet_open"
+                    tools:ignore="ContentDescription" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleColor="?attr/rippleColor"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleRoundedCorners="20dp"
+                app:mrl_rippleDuration="100"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tab_bar_opner"
+                    android:background="@drawable/tabs_bg"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="7dp"
+                    android:paddingStart="2dp"
+                    android:text="1"
+                    android:textColor="?attr/darkTextColor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleColor="?attr/rippleColor"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleRoundedCorners="20dp"
+                app:mrl_rippleDuration="100"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/search"
+                    tools:ignore="ContentDescription" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0dp"
+        android:visibility="gone"
+        android:onClick="doNothing"
+        app:cardBackgroundColor="#8F000000"
+        android:id="@+id/customFragCard">
+
+        <FrameLayout
+            android:id="@+id/bottomSheetFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/settingsFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/historyFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/floathistoryFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/splithistoryFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bookmarkFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/downloadsFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/splitModeFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/addonsFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/feedbackFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/aboutFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

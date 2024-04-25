@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="crash_config_promo_on">false</bool>
+
+    <bool name="update_app_enabled">false</bool>
+    <string name="update_app_url">https://play.google.com/store/apps/details?id=com.skyinbrowser</string>
+    <string name="update_app_version">1.2.3</string>
+</resources>

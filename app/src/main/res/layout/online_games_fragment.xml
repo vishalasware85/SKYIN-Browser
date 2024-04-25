@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/games" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/atmegames"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/addictinggames"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/myrealgames"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/goboplay"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/minecraft"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/y8games"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleColor="?attr/rippleColor"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleRoundedCorners="10dp"
+            app:mrl_rippleDuration="100"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_sites_add">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/my_sites_add"
+            android:id="@+id/silvergames"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

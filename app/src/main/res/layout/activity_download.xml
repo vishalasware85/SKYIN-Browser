@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/downloadAnimVisible"
+    android:visibility="visible"
+    app:cardBackgroundColor="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="?attr/windowBackground"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:visibility="visible"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="-100dp"
+                android:id="@+id/downloadToolbar"
+                android:layout_marginRight="-100dp"
+                android:layout_marginLeft="-100dp"
+                android:background="?attr/toolbar">
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/closeDownloads"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/backbutton"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Downloads"
+                android:textSize="25sp"
+                android:fontFamily="@font/play_flair"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/purewhite"/>
+        </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

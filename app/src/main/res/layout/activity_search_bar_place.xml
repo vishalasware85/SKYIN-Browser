@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    tools:context=".for_search.search_bar_place">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/search_bardj"
+            android:padding="3.5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/searchbar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9">
+
+                    <ImageButton
+                        android:paddingTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/google_icon"
+                        android:background="@color/transparent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:background="@color/transparent"
+                        android:textColor="?attr/normalTextColor"
+                        android:id="@+id/for_search_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:hint="@string/search_or_type_url"
+                        android:textColorHint="#FF757575"
+                        android:imeOptions="actionSend"
+                        android:inputType="text"
+                        android:text=""
+                        android:textSize="15dp"
+                        tools:ignore="NestedWeights,SpUsage" />
+
+                    <requestFocus/>
+
+                    <ImageView
+                        android:id="@+id/search_button"
+                        android:layout_width="57dp"
+                        android:layout_height="49dp"
+                        android:layout_weight="0.1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/search"
+                        android:background="@color/transparent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/suggestionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

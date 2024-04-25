@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    style="@style/Theme.AppCompat.Translucent11"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/enterView"
+        app:cardBackgroundColor="?attr/cardBackground"
+        app:cardCornerRadius="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/transparent"
+                android:visibility="visible"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/explore_text"
+                    android:gravity="center"
+                    android:textColor="?attr/normalTextColor"
+                    android:background="@color/transparent"
+                    android:textSize="20sp"
+                    android:text="Explore More"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:onClick="finish"
+                    android:id="@+id/explore_cancel"
+                    android:layout_gravity="end"
+                    android:background="@color/transparent"
+                    android:layout_width="50dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crossbtn"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="0.1"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/back_bt"
+                    android:onClick="back_to_explore_layout"
+                    android:padding="6dp"
+                    android:layout_gravity="start"
+                    android:background="@color/transparent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/disabled_back"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/stores_text"
+                    android:gravity="center"
+                    android:textColor="?attr/normalTextColor"
+                    android:background="@color/transparent"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ScrollView
+                android:id="@+id/full_explore_view"
+                android:scrollbars="none"
+                android:layout_weight="0.9"
+                android:visibility="visible"
+                android:background="@color/transparent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:background="@color/transparent"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:onClick="open_shopping_layout"
+                        android:orientation="horizontal"
+                        android:background="@color/transparent"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:background="@color/transparent"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/stores" />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:textColor="?attr/darkTextColor"
+                            android:layout_weight="0.1"
+                            android:paddingLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shopping"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/web_foeward"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="open_music_layout"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <ImageView
+                            android:background="@color/transparent"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/music" />
+
+                        <TextView
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:paddingLeft="10dp"
+                            android:textColor="?attr/darkTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Music" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/web_foeward" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="open_sports_layout"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <ImageView
+                            android:background="@color/transparent"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/sports" />
+                        <TextView
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:paddingLeft="10dp"
+                            android:textColor="?attr/darkTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sports"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/web_foeward" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="open_onlinegames_layout"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <ImageView
+                            android:background="@color/transparent"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/games" />
+                        <TextView
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:paddingLeft="10dp"
+                            android:textColor="?attr/darkTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online Games"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/web_foeward" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="open_travel_layout"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <ImageView
+                            android:background="@color/transparent"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:srcCompat="@drawable/games" />
+                        <TextView
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:paddingLeft="10dp"
+                            android:textColor="?attr/darkTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/web_foeward" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:id="@+id/shopping_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:id="@+id/music_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:id="@+id/sports_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:id="@+id/online_games_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="0.9"
+                android:id="@+id/travel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
