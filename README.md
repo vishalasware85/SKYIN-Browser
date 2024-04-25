@@ -30,4 +30,3 @@ SKYIN Browser is released under the MIT License.
 
 ---
 
-*Note: This README is a placeholder. Please update it with relevant information about your project.* 📝
